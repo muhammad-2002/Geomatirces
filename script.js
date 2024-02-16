@@ -1,8 +1,11 @@
+
+
 //input function
 function getInput (UserInput){
     const getID =document.getElementById(UserInput)
     const getValue = getID.value
-    const parseFloat = parseFloat(getValue)
+    const parseflot = parseFloat(getValue)
+    return parseflot
 
 }
 
@@ -12,7 +15,20 @@ function calculateTriangle(){
     const base = getInput('triangle-base')
     const height = getInput('triangle-hight')
     const result = 0.5 * base * height
+    const setId = setValue('Triangle-area', result,'setAttribute')
+    return setId
+    
+}
 
-    console.log(result,"hellow")
+//set value
+function setValue(id,text,area){
+    const getId = document.getElementById(id).innerHTML = text 
+    const areaSet =document.getElementById(area)
+    const newDiv =document.createElement('div')
+    const newHeading = document.createElement('h1')
+    newDiv.appendChild(newHeading)
+    areaSet.appendChild(newDiv)
+    newHeading.innerText = getId   
+    return getId
 
 }
