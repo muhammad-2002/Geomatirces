@@ -142,24 +142,33 @@
             <div class="card-body">
               <h2 class="card-title flex justify-center">Rhombus</h2>
               <p class="flex justify-center text-base">
-                Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+                Area (A) =<span id="Rhombus">
+                  0.5 x d<sub>1</sub> x d<sub>2</sub></span
+                >
               </p>
               <p class="text-center flex justify-evenly">
                 <input
                   class="w-24 text-2xl p-1 bg-slate-200 rounded-sm"
                   type="text"
                   placeholder="d1"
+                  id="d1"
                 />
                 <span class="text-2xl">cm</span
                 ><input
                   class="w-24 text-2xl p-1 bg-slate-200 rounded-sm"
                   type="text"
                   placeholder="d2"
+                  id="d2"
                 />
                 <span class="text-2xl">cm</span>
               </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateRhombus()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -169,26 +178,33 @@
               <img src="images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title flex justify-center">Triangle</h2>
+              <h2 class="card-title flex justify-center">Pentagon</h2>
               <p class="flex justify-center text-base">
-                Area (A) = 0.5 x p x b
+                Area (A) = <span id="Pentagon">0.5 x p x b</span>
               </p>
               <p class="text-center flex justify-evenly">
                 <input
                   class="w-24 text-2xl p-1 bg-slate-200 rounded-sm"
                   type="text"
                   placeholder="p"
+                  id="p"
                 />
                 <span class="text-2xl">cm</span
                 ><input
                   class="w-24 text-2xl p-1 bg-slate-200 rounded-sm"
                   type="text"
                   placeholder="b"
+                  id="b"
                 />
                 <span class="text-2xl">cm</span>
               </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="CalculatePentagon()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -200,24 +216,31 @@
             <div class="card-body">
               <h2 class="card-title flex justify-center">Ellipse</h2>
               <p class="flex justify-center text-base">
-                Area (A) = 1.41 x a x b
+                Area (A) = <span id="Ellipse">1.41 x a x b</span>
               </p>
               <p class="text-center flex justify-evenly">
                 <input
                   class="w-24 text-2xl p-1 bg-slate-200 rounded-sm"
                   type="text"
                   placeholder="a"
+                  id="a"
                 />
                 <span class="text-2xl">cm</span
                 ><input
                   class="w-24 text-2xl p-1 bg-slate-200 rounded-sm"
                   type="text"
                   placeholder="b"
+                  id="b"
                 />
                 <span class="text-2xl">cm</span>
               </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="calculateEllips()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
