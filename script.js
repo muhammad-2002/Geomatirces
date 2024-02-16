@@ -19,6 +19,26 @@ function calculateTriangle(){
     return setId
     
 }
+//calculate Rectangle
+function calculateRectangle(){
+    const w = getInput('w')
+    const I = getInput('I')
+    const result = w*I
+    const setId = setValue('Rectangle-Area', result,'setAttribute')
+    
+    return setId
+    
+}
+//calculate Parallelogram
+function calculateParallelogram(){
+    const b = getInput('b')
+    const h = getInput('h')
+    const result = b*h
+    const setId = setValue('Parallelogram-Area', result,'setAttribute')
+    
+    return setId
+    
+}
 
 //set value
 function setValue(id,text,area){
